@@ -13,7 +13,7 @@ class FunctionTest(unittest.TestCase):
         # price under ten, 5 cash, 20%
         self.assertEqual(calculate_price.calculate_price(under_ten, 5.0, 20.0), 1.60)
          # price under ten, 10 cash, 10%
-        self.assertEqual(calculate_price.calculate_price(under_ten, 10.0, 10.0), -2.70)
+        self.assertEqual(calculate_price.calculate_price(under_ten, 10.0, 10.0), -2.70)# this will fail, its < 0
 
 if __name__ == '__main__':
     unittest.main()
