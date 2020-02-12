@@ -7,7 +7,7 @@ discount coupons on the pre-tax amount. Then you add tax at 6% and shipping acco
 """
 def calculate_price(price, cash_coupon, percent_coupon):
     Total_Cash = price - cash_coupon
-    Total_Coupon = Total_Cash * (1-(percent_coupon/100))
+    Total_Coupon = round(Total_Cash * (1-(percent_coupon/100)),2)
     if Total_Coupon <0:
         Total_Coupon =0
     print('Discount price is: ' + str(round(Total_Coupon,2)))
